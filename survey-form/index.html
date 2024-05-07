@@ -11,5 +11,39 @@
         <h1>Survey Form</h1>
         <p>Please fill out this form with the required information.</p>
     </div>
+    <form method="post" action="https://ksurveyform.com">
+        <fieldset>
+            <label for="first-name">First Name:* <input id="first-name" name="first-name" type="radio" required></label>
+            <label for="last-name">Last Name:* <input id="last-name" name="last-name" type="radio" required></label>
+            <label for="age">Age(opcional): <input id="age" name="age" type="radio"></label>
+            <label for="email">Email:* <input id="email" name="email" type="email" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your studying method?</legend>
+            <label class="inlane" for="method-degree"><input id="method-degree" type="radio" name="method-degree"> Degree</label>
+            <label for="method-boot-camp"><input id="method-boot-camp" type="radio" name="method-boot-camp"> Boot Camp</label>
+            <label for="method-open-sourse"><input id="method-open-sourse" type="radio" name="method-open-sourse"> Open Source</label>
+        </fieldset>
+        <fieldset>
+            <legend>Laguage that you're good at (Check all that apply):</legend>
+            <div class="left">
+                <label><input type="checkbox"> Java Script</label>
+                <label><input type="checkbox"> CSS / HTML</label>
+                <label><input type="checkbox"> C /C++</label>
+                <label><input type="checkbox"> SQL</label>
+                <label><input type="checkbox"> C#</label>
+                <label><input type="checkbox"> Ruby</label>
+            </div>
+            <div class="right">
+                <label><input type="checkbox"> Swift</label>
+                <label><input type="checkbox"> Python</label>
+                <label><input type="checkbox"> PHP</label>
+                <label><input type="checkbox"> Type Script</label>
+                <label><input type="checkbox"> Java</label>
+                <label><input type="checkbox"> Go</label>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>
+
